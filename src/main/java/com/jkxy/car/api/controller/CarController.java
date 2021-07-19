@@ -52,7 +52,7 @@ public class CarController {
     }
 
     /**
-     * 通过id删除
+     * 通过id执行删除
      *
      * @param id
      * @return
