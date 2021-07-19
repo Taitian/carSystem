@@ -17,7 +17,7 @@ public class CarController {
     private CarService carService;
 
     /**
-     * 查询所有
+     * 查询所有汽车
      *
      * @return
      */
