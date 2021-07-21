@@ -25,4 +25,10 @@ public interface CarDao {
 
     @Insert("insert into carMessage(carName,carType,price,carSeries) values(#{carName},#{carType},#{price},#{carSeries})")
     void insertCar(Car car);
+
+    @Select("select * from carMessage where carSeries = #{carSeries}")
+    List<Car> findByCarSeries(String carSeries);
+
+    @Select("select * from carMessage where carName like #{keyword}")
+    List<Car> search(String keyword);
 }

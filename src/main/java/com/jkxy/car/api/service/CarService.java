@@ -18,4 +18,8 @@ public interface CarService {
     void updateById(Car car);
 
     void insertCar(Car car);
+
+    List<Car> findBySeries(String carSeries);
+
+    List<Car> fuzzySearch(String keyword);
 }
